@@ -93,3 +93,16 @@ Caused by: java.lang.OutOfMemoryError: Java heap space, compiling:(clojure/core.
 	... 1 more
 Caused by: java.lang.OutOfMemoryError: Java heap space
 ```
+
+
+You'll notice that starting the application without the Datadog Java agent starts
+as expected:
+
+```
+java -server -cp app.jar clojure.main -m compute.fibonacci.core
+2018-12-12 21:15:23.315:INFO::main: Logging initialized @7554ms
+Starting server on port 8080...
+2018-12-12 21:15:23.879:INFO:oejs.Server:main: jetty-9.2.z-SNAPSHOT
+2018-12-12 21:15:23.943:INFO:oejs.ServerConnector:main: Started ServerConnector@247748d3{HTTP/1.1}{0.0.0.0:8080}
+2018-12-12 21:15:23.944:INFO:oejs.Server:main: Started @8183ms
+```
