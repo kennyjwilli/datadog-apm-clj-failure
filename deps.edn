@@ -1,0 +1,8 @@
+{:paths   ["src" "resources"]
+ :deps    {org.clojure/clojure     {:mvn/version "1.9.0"}
+           ring/ring-jetty-adapter {:mvn/version "1.7.0"}
+           ring/ring-core          {:mvn/version "1.7.0"}
+           hiccup                  {:mvn/version "2.0.0-alpha1"}}
+ :aliases {:uberjar {:extra-deps {com.healthfinch/depstar {:git/url "git@github.com:healthfinch/depstar.git"
+                                                           :sha     "2879672df7fd296855563c22dd9ba9de2022a0b4"}}
+                     :main-opts  ["-m" "hf.depstar.uberjar" "app.jar"]}}}

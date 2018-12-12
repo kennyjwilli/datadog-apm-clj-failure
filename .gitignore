@@ -1,0 +1,5 @@
+vm-resources
+.idea
+.cpcache
+*.iml
+deploy.sh
